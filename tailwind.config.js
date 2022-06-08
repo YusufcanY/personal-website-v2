@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'jit',
+  darkMode: 'class',
   content: [
     './components/**/*.{vue,js}',
     './layouts/**/*.vue',
@@ -9,7 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        'dark-foreground': '#191919',
+      },
       fontFamily: {
         montserrat: ['Josefin Sans', 'sans-serif'],
       },

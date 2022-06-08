@@ -1,8 +1,7 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
-  background-color: #181b1b;
 }
 * {
   outline: none;
-  /* transition: all 0.3s; */
+  transition: all 0.3s;
 }
