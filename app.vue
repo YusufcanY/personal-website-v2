@@ -1,3 +1,6 @@
 <template>
-  <NuxtPage />
+  <div>
+    <InitTheme />
+    <NuxtPage class="min-h-screen w-full" />
+  </div>
 </template>

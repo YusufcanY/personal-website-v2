@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         'dark-foreground': '#191919',
+        'light-foreground': '#f2f2f2',
       },
       fontFamily: {
         montserrat: ['Josefin Sans', 'sans-serif'],
