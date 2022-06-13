@@ -48,7 +48,7 @@
       <a
         v-for="(post, index) in posts"
         :key="index"
-        class="group relative flex h-60 flex-col overflow-hidden bg-dark-foreground !bg-opacity-10 p-4 hover:shadow-xl dark:bg-light-foreground"
+        class="group relative flex h-60 flex-col overflow-hidden border border-dark-foreground border-opacity-20 bg-dark-foreground !bg-opacity-10 p-4 hover:shadow-xl dark:border-light-foreground dark:border-opacity-20 dark:bg-light-foreground"
         :href="`https://blog.yusufcanyilmaz.com/${post.slug}`"
         target="_blank"
       >
@@ -57,15 +57,15 @@
         </h4>
         <p class="relative z-10">{{ post.brief.slice(0, 120) }}...</p>
         <div
-          class="absolute top-0 left-0 z-[6] h-full w-full bg-light-foreground opacity-50 group-hover:opacity-0 dark:bg-dark-foreground"
+          class="absolute top-0 left-0 z-[6] h-full w-full bg-light-foreground opacity-70 group-hover:opacity-0 dark:bg-dark-foreground"
         ></div>
 
         <div
-          class="absolute top-0 left-0 z-[5] h-full w-full bg-gradient-to-t from-light-foreground to-transparent dark:from-dark-foreground"
+          class="absolute top-0 left-0 z-[5] h-full w-full bg-gradient-to-t from-light-foreground to-transparent opacity-0 group-hover:opacity-100 dark:from-dark-foreground"
         ></div>
         <img alt="" class="absolute top-0 left-0 z-0" :src="post.coverImage" />
         <a
-          class="absolute top-2 right-2 z-10 flex space-x-2 bg-light-foreground px-4 py-2 opacity-0 hover:shadow-md group-hover:opacity-100 dark:bg-dark-foreground"
+          class="absolute top-2 right-2 z-10 flex items-center space-x-2 bg-light-foreground px-4 py-2 opacity-0 hover:shadow-md group-hover:opacity-100 dark:bg-dark-foreground"
           :href="`https://blog.yusufcanyilmaz.com/${post.slug}`"
           target="_blank"
         >
