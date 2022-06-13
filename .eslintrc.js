@@ -8,6 +8,10 @@ module.exports = {
   globals: {
     definePageMeta: 'readonly',
   },
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 2022,
+  },
   extends: [
     'plugin:vue/vue3-recommended',
     'eslint:recommended',
