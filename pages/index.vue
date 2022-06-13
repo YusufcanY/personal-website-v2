@@ -1,8 +1,4 @@
-<script setup>
-  definePageMeta({
-    pageTransition: { name: 'page', mode: 'default' },
-  })
-</script>
+<script setup></script>
 <template>
   <div
     class="grid h-screen grid-cols-12 grid-rows-6 gap-2 bg-light-foreground p-4 text-black dark:bg-dark-foreground dark:text-light-foreground"
@@ -25,10 +21,11 @@
       <span>coding.</span>
     </NuxtLink>
     <div class="col-span-4 block lg:hidden"></div>
-    <div
+    <NuxtLink
       class="col-span-4 flex items-end justify-end text-xl lg:col-span-6 lg:p-4"
+      to="/meet-me"
     >
       <span>meet me.</span>
-    </div>
+    </NuxtLink>
   </div>
 </template>
