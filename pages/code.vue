@@ -49,7 +49,7 @@
         />
       </div>
       <div
-        class="relative flex flex-col justify-center overflow-hidden bg-dark-foreground !bg-opacity-10 p-6 pt-12 dark:bg-light-foreground"
+        class="relative col-span-2 flex flex-col justify-center overflow-hidden bg-dark-foreground !bg-opacity-10 p-6 pt-12 dark:bg-light-foreground lg:col-span-1"
       >
         <h4 class="text-2xl font-black">TAILWINDCSS</h4>
         <p class="opacity-50">Class Based CSS Framework</p>
@@ -104,7 +104,7 @@
         />
       </div>
       <div
-        class="relative flex flex-col justify-center overflow-hidden bg-dark-foreground !bg-opacity-10 p-6 pt-12 dark:bg-light-foreground"
+        class="relative col-span-2 flex flex-col justify-center overflow-hidden bg-dark-foreground !bg-opacity-10 p-6 pt-12 dark:bg-light-foreground lg:col-span-1"
       >
         <h4 class="text-2xl font-black">TYPESCRIPT</h4>
         <p class="opacity-50">JavaScript With Syntax For Types</p>

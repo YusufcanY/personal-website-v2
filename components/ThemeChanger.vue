@@ -12,7 +12,7 @@
 </script>
 <template>
   <button
-    class="h-10 w-10 overflow-hidden rounded-full bg-dark-foreground bg-opacity-90 p-1 text-light-foreground dark:bg-light-foreground dark:text-dark-foreground"
+    class="h-8 w-8 overflow-hidden rounded-full bg-dark-foreground bg-opacity-90 p-1 text-light-foreground dark:bg-light-foreground dark:text-dark-foreground lg:h-10 lg:w-10"
     @click="changeTheme"
   >
     <Transition mode="out-in" name="slide-left">

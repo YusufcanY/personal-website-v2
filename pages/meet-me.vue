@@ -102,10 +102,10 @@
       </div>
       <p class="text-lg">
         I enjoy gaming and skating; those are two of my favorite pastimes. There
-        are also social events. Meeting new people is something I like. Outside
+        are also social events, meeting new people is something I like. Outside
         of work, I'm now attempting to improve my English on Cambly. Right now,
         I'm working on some articles these days and I'm sharing my Frontend
-        experience, especially about Vue.js. You directly can find my articles
+        experience, especially about Vue.js. You can easily find my articles
         down below:
       </p>
     </div>
@@ -123,10 +123,10 @@
       >
         <img
           alt=""
-          class="top-0 left-0 z-0 mb-4 lg:absolute lg:mb-0"
+          class="top-0 left-0 z-0 mb-4 h-full w-full lg:absolute lg:mb-0"
           :src="post.coverImage"
         />
-        <div class="hidden h-0 ease-out group-hover:h-full lg:block"></div>
+        <div class="hidden h-0 ease-in-out group-hover:h-full lg:block"></div>
         <div>
           <h4 class="relative z-10 text-2xl font-black">
             {{ post.title }}
@@ -161,10 +161,10 @@
       >
         <img
           alt=""
-          class="top-0 left-0 z-0 mb-4 lg:absolute lg:mb-0"
+          class="top-0 left-0 z-0 mb-4 h-full w-full lg:absolute lg:mb-0"
           :src="post.thumbnail"
         />
-        <div class="hidden h-0 ease-out group-hover:h-full lg:block"></div>
+        <div class="hidden h-0 ease-in-out group-hover:h-full lg:block"></div>
         <div>
           <h4 class="relative z-10 text-2xl font-black">
             {{ post.title }}
