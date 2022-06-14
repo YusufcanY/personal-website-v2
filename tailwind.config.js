@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         'dark-foreground': '#191919',
         'light-foreground': '#f2f2f2',
+        accent: '#0057ff',
       },
       fontFamily: {
         montserrat: ['Josefin Sans', 'sans-serif'],
