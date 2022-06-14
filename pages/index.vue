@@ -6,26 +6,29 @@
     <div class="col-span-6 text-xl font-bold lg:p-4">
       <span>yusufcan</span>
     </div>
-    <div class="col-span-6 flex items-start justify-end text-xl lg:p-4">
-      <span>say hi.</span>
-    </div>
+    <NuxtLink
+      class="group col-span-6 flex items-start justify-end text-xl lg:p-4"
+      to="/meet-me"
+    >
+      <span>say <span class="group-hover:text-accent">hi</span>.</span>
+    </NuxtLink>
     <div class="row-span-4 hidden lg:block"></div>
     <div class="col-span-12 row-span-4 lg:col-span-10"></div>
     <div class="row-span-4 hidden flex-col items-end justify-center lg:flex">
       <ThemeChanger />
     </div>
     <NuxtLink
-      class="col-span-4 flex items-end text-xl lg:col-span-6 lg:p-4"
+      class="group col-span-4 flex items-end text-xl lg:col-span-6 lg:p-4"
       to="/code"
     >
-      <span>coding.</span>
+      <span>coding<span class="group-hover:text-accent">.</span></span>
     </NuxtLink>
     <div class="col-span-4 block lg:hidden"></div>
     <NuxtLink
-      class="col-span-4 flex items-end justify-end text-xl lg:col-span-6 lg:p-4"
+      class="group col-span-4 flex items-end justify-end text-xl lg:col-span-6 lg:p-4"
       to="/meet-me"
     >
-      <span>meet me.</span>
+      <span>meet <span class="group-hover:text-accent">me</span>.</span>
     </NuxtLink>
   </div>
 </template>
