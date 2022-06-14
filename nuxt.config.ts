@@ -13,6 +13,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  ssr: false,
   app: {
     head: {
       title: 'Yusufcan Yılmaz',
