@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   buildModules: ['./modules/auto-import-eslint'],
   css: ['@/assets/css/main.css', '@/assets/css/tailwind.css'],
   build: {
+    transpile: ['@heroicons/vue'],
     postcss: {
       postcssOptions: {
         plugins: {
