@@ -6,6 +6,8 @@
   const hashnodePosts = useState('hashnodePosts', () => [])
   const mediumPosts = useState('mediumPosts', () => [])
   const timeSince = (date) => {
+    if (date.charAt(date.length - 1) !== 'Z')
+      date = date.replace(' ', 'T') + 'Z' // It fixes IOS date bug
     const seconds = Math.floor((new Date() - new Date(date)) / 1000)
 
     let interval = seconds / 31536000
