@@ -133,9 +133,9 @@
           <h4 class="relative z-10 text-2xl font-black">
             {{ post.title }}
           </h4>
-          <span class="relative z-10 h-full">{{
-            timeSince(post.dateAdded)
-          }}</span>
+          <span class="relative z-10 h-full"
+            >{{ timeSince(post.dateAdded) }} in Hashnode</span
+          >
         </div>
         <div
           class="absolute top-0 left-0 z-[6] hidden h-full w-full bg-light-foreground opacity-70 group-hover:opacity-0 dark:bg-dark-foreground lg:block"
@@ -150,8 +150,7 @@
           <ExternalLinkIcon class="hidden h-5 w-5 lg:block" />
           <span class="flex space-x-1">
             <span>Read More</span>
-            <span class="block lg:hidden">on Hashnode</span></span
-          >
+          </span>
         </button>
       </a>
       <a
@@ -171,9 +170,9 @@
           <h4 class="relative z-10 text-2xl font-black">
             {{ post.title }}
           </h4>
-          <span class="relative z-10 h-full">{{
-            timeSince(post.pubDate)
-          }}</span>
+          <span class="relative z-10 h-full"
+            >{{ timeSince(post.pubDate) }} in Medium</span
+          >
         </div>
         <div
           class="absolute top-0 left-0 z-[6] hidden h-full w-full bg-light-foreground opacity-70 group-hover:opacity-0 dark:bg-dark-foreground lg:block"
@@ -188,8 +187,7 @@
           <ExternalLinkIcon class="hidden h-5 w-5 lg:block" />
           <span class="flex space-x-1">
             <span>Read More</span>
-            <span class="block lg:hidden">on Medium</span></span
-          >
+          </span>
         </button>
       </a>
     </div>
