@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div
-    class="grid h-screen grid-cols-12 grid-rows-6 gap-2 bg-light-foreground p-4 text-black dark:bg-dark-foreground dark:text-light-foreground"
+    class="safe-area grid grid-cols-12 grid-rows-6 gap-2 bg-light-foreground p-4 text-black dark:bg-dark-foreground dark:text-light-foreground"
   >
     <div class="col-span-6 text-2xl font-bold lg:p-4 lg:text-xl">
       <span>yusufcan</span>
