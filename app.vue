@@ -12,11 +12,11 @@
   })
   useHead({
     title,
-    description,
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
+      { name: 'description', content: description },
       {
         name: 'twitter:title',
         content: title,
