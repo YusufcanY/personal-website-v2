@@ -6,7 +6,7 @@
   definePageMeta({
     title: 'About Me',
     description:
-      'Yusufcan Yılmaz is a frontend developer who is passionate about building beautiful and functional websites.',
+      'Yusufcan Yılmaz is a Frontend Developer who is passionate about building beautiful and functional websites.',
   })
   const hashnodePosts = useState('hashnodePosts', () => [])
   const mediumPosts = useState('mediumPosts', () => [])
