@@ -1,5 +1,9 @@
 <script setup>
   import { ArrowNarrowRightIcon } from '@heroicons/vue/outline'
+  definePageMeta({
+    title: 'Contact',
+    description: 'Have a great idea to share? Just send me a message.',
+  })
 </script>
 <template>
   <div

@@ -3,6 +3,11 @@
     ArrowNarrowRightIcon,
     ExternalLinkIcon,
   } from '@heroicons/vue/outline'
+  definePageMeta({
+    title: 'About Me',
+    description:
+      'Yusufcan Yılmaz is a frontend developer who is passionate about building beautiful and functional websites.',
+  })
   const hashnodePosts = useState('hashnodePosts', () => [])
   const mediumPosts = useState('mediumPosts', () => [])
   const timeSince = (date) => {
@@ -103,12 +108,14 @@
         />
       </div>
       <p class="text-lg">
-        I enjoy gaming and skating; those are two of my favorite pastimes. There
-        are also social events, meeting new people is something I like. Outside
-        of work, I'm now attempting to improve my English on Cambly. Right now,
-        I'm working on some articles these days and I'm sharing my Frontend
-        experience, especially about Vue.js. You can easily find my articles
-        down below:
+        Hi, I'm <strong>Yusufcan</strong>. I'm a <u>software developer</u> and a
+        <u>web developer</u>. I'm currently working on Frontend and using Vue.js
+        as a framework. I enjoy gaming and skating; those are two of my favorite
+        pastimes. There are also social events, meeting new people is something
+        I like. Outside of work, I'm now attempting to improve my English on
+        <u>Cambly</u>. Right now, I'm working on some articles these days and
+        I'm sharing my Frontend experience, especially about Vue.js. You can
+        easily find my articles down below:
       </p>
     </div>
     <h3 class="!mt-8 text-2xl font-black">Articles</h3>

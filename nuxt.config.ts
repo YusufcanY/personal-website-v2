@@ -16,7 +16,6 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Yusufcan Yılmaz | Frontend Developer',
       link: [
         {
           rel: 'preconnect',
@@ -29,11 +28,6 @@ export default defineNuxtConfig({
       ],
       meta: [
         {
-          name: 'description',
-          content:
-            'Yusufcan Yılmaz is a frontend developer who is passionate about building beautiful and functional websites.',
-        },
-        {
           name: 'theme-color',
           content: '#0057ff',
         },
@@ -44,15 +38,6 @@ export default defineNuxtConfig({
         {
           property: 'og:type',
           content: 'website',
-        },
-        {
-          property: 'og:title',
-          content: 'Yusufcan Yılmaz | Frontend Developer',
-        },
-        {
-          property: 'og:description',
-          content:
-            'Yusufcan Yılmaz is a frontend developer who is passionate about building beautiful and functional websites.',
         },
         {
           property: 'og:image',
@@ -69,15 +54,6 @@ export default defineNuxtConfig({
         {
           property: 'twitter:url',
           content: 'https://yusufcanyilmaz.com/',
-        },
-        {
-          name: 'twitter:title',
-          content: 'Yusufcan Yılmaz | Frontend Developer',
-        },
-        {
-          name: 'twitter:description',
-          content:
-            'Yusufcan Yılmaz is a frontend developer who is passionate about building beautiful and functional websites.',
         },
         {
           name: 'twitter:image',

@@ -1,5 +1,10 @@
 <script setup>
   import { ArrowNarrowRightIcon } from '@heroicons/vue/outline'
+  definePageMeta({
+    title: 'Skills',
+    description:
+      'Yusufcan Yılmaz building high quality websites with latest technologies like Vue.js and Nuxt.js.',
+  })
 </script>
 <template>
   <div

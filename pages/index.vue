@@ -4,7 +4,7 @@
     class="safe-area grid grid-cols-12 grid-rows-6 gap-2 bg-light-foreground p-4 text-black dark:bg-dark-foreground dark:text-light-foreground"
   >
     <div class="col-span-6 text-2xl font-bold lg:p-4 lg:text-xl">
-      <span>yusufcan</span>
+      <h2>yusufcan</h2>
     </div>
     <NuxtLink
       class="group col-span-6 hidden items-start justify-end text-xl lg:flex lg:p-4"
@@ -28,13 +28,13 @@
     </NuxtLink>
     <NuxtLink
       class="group col-span-4 flex items-end justify-center text-xl lg:hidden lg:p-4"
-      to="/say-hi"
+      to="/contact"
     >
       <span>say <span class="group-hover:text-accent">hi</span>.</span>
     </NuxtLink>
     <NuxtLink
       class="group col-span-4 flex items-end justify-end text-xl lg:col-span-6 lg:p-4"
-      to="/meet-me"
+      to="/about-me"
     >
       <span>meet <span class="group-hover:text-accent">me</span>.</span>
     </NuxtLink>
