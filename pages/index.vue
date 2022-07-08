@@ -8,7 +8,7 @@
     </div>
     <NuxtLink
       class="group col-span-6 hidden items-start justify-end text-xl lg:flex lg:p-4"
-      to="/about-me"
+      to="/contact"
     >
       <span>say <span class="group-hover:text-accent">hi</span>.</span>
     </NuxtLink>
