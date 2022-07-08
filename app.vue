@@ -21,8 +21,8 @@
         name: 'twitter:title',
         content: title,
       },
-      { name: 'twitter:description', content: title },
-      { name: 'og:title', content: description },
+      { name: 'twitter:description', content: description },
+      { name: 'og:title', content: title },
       { name: 'og:description', content: description },
     ],
   })
