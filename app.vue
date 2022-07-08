@@ -13,6 +13,9 @@
   useHead({
     title,
     description,
+    htmlAttrs: {
+      lang: 'en',
+    },
     meta: [
       {
         name: 'twitter:title',
