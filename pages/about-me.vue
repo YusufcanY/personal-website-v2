@@ -54,12 +54,14 @@
       ` second${Math.floor(interval) === 1 ? '' : 's'} ago`
     )
   }
-  const { data: hashnode, pending: pendingHash } = useLazyFetch(
-    'https://api.hashnode.com/',
-    {
-      method: 'post',
-      body: {
-        query: `
+  const {
+    data: hashnode,
+    pending: pendingHash,
+    error: errHash,
+  } = useLazyFetch('https://api.hashnode.com/', {
+    method: 'post',
+    body: {
+      query: `
         {
     user(username: "yusufcan") {
       publication {
@@ -73,10 +75,13 @@
       }
     }
   }`,
-      },
-    }
-  )
-  const { data: medium, pending: pendingMed } = useLazyFetch(
+    },
+  })
+  const {
+    data: medium,
+    pending: pendingMed,
+    error: errMed,
+  } = useLazyFetch(
     'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@yusufcan-yilmaz'
   )
 </script>
@@ -121,7 +126,9 @@
     <div v-if="pendingHash || pendingMed">loading</div>
     <div v-else class="grid grid-cols-1 gap-4 lg:grid-cols-3">
       <a
-        v-for="(post, index) in hashnode.data.user.publication.posts"
+        v-for="(post, index) in errHash
+          ? []
+          : hashnode.data.user.publication.posts"
         :key="index"
         class="group relative flex flex-col overflow-hidden border border-dark-foreground border-opacity-20 bg-dark-foreground !bg-opacity-10 p-4 hover:shadow-xl dark:border-light-foreground dark:border-opacity-20 dark:bg-light-foreground lg:h-60"
         :href="`https://blog.yusufcanyilmaz.com/${post.slug}`"
@@ -158,7 +165,7 @@
         </button>
       </a>
       <a
-        v-for="(post, index) in medium.items"
+        v-for="(post, index) in errMed ? [] : medium.items"
         :key="index"
         class="group relative flex flex-col overflow-hidden border border-dark-foreground border-opacity-20 bg-dark-foreground !bg-opacity-10 p-4 hover:shadow-xl dark:border-light-foreground dark:border-opacity-20 dark:bg-light-foreground lg:h-60"
         :href="post.link"
