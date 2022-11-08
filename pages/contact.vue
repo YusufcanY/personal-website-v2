@@ -33,10 +33,10 @@
       </h3>
       <a
         class="col-span-1 flex flex-col space-y-4 border border-accent border-opacity-0 p-4 hover:border-opacity-100 hover:shadow-lg md:col-span-2"
-        href="mailto:yusufcan.yilmaz@outlook.com"
+        href="mailto:mail@yusufcanyilmaz.com"
       >
         <span class="text-lg" for="email">email:</span>
-        <span class="text-xl font-bold">yusufcan.yilmaz@outlook.com</span>
+        <span class="text-xl font-bold">mail@yusufcanyilmaz.com</span>
       </a>
       <a
         class="col-span-1 flex flex-col space-y-4 border border-accent border-opacity-0 p-4 hover:border-opacity-100 hover:shadow-lg"
