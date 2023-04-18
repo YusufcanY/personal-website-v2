@@ -16,24 +16,21 @@
     class="h-8 w-8 overflow-hidden rounded-full bg-dark-foreground bg-opacity-90 p-1 text-light-foreground dark:bg-light-foreground dark:text-dark-foreground lg:h-10 lg:w-10"
     @click="changeTheme"
   >
-    <Transition mode="out-in" name="fade-scale">
+    <Transition mode="out-in" name="slide-left">
       <SunIcon v-if="isDark" />
       <MoonIcon v-else />
     </Transition>
   </button>
 </template>
 <style scoped>
-  .fade-scale-enter-active,
-  .fade-scale-leave-active {
+  .slide-left-enter-active,
+  .slide-left-leave-active {
     transition: 0.2s ease-in;
   }
-
-  .fade-scale-enter-from {
-    opacity: 1;
-    transform: scale(1);
+  .slide-left-enter-from {
+    transform: translateX(100%);
   }
-  .fade-scale-leave-to {
-    opacity: 0;
-    transform: scale(0.5);
+  .slide-left-leave-to {
+    transform: translateX(-100%);
   }
 </style>
