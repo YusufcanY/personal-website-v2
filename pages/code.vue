@@ -25,7 +25,7 @@
       own website?". I chose to build my own websites. In high school, I made
       simple webpages using HTML, CSS, and JavaScript. I also used C# to develop
       various form apps. Then, in October 2020, I started working as an intern
-      at my present company. Four months later, I started working as a full-time
+      at my first company. Four months later, I started working as a full-time
       Frontend Developer for the same firm. I'm familiar with crypto currency
       systems and have worked with web3.js. I've mentioned several technologies
       that I've worked in the past:
