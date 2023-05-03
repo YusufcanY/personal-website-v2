@@ -3,7 +3,7 @@
   <div
     class="safe-area bg-light-foreground dark:bg-dark-foreground dark:text-light-foreground grid grid-cols-12 grid-rows-6 gap-2 p-4 text-black"
   >
-    <div class="col-span-6 text-2xl font-bold lg:p-4 lg:text-xl">
+    <div class="col-span-8 text-2xl font-bold lg:col-span-6 lg:p-4 lg:text-xl">
       <h2>yusufcan yılmaz</h2>
     </div>
     <NuxtLink
@@ -12,17 +12,19 @@
     >
       <span>say <span class="group-hover:text-accent">hi</span>.</span>
     </NuxtLink>
-    <div class="col-span-6 flex items-start justify-end lg:hidden">
+    <div class="col-span-4 flex items-start justify-end lg:hidden">
       <ThemeChanger />
     </div>
     <div class="row-span-4 hidden lg:block"></div>
-    <div class="col-span-12 row-span-4 space-y-4 font-black lg:col-span-10">
-      <h3 class="text-5xl lg:text-8xl">
+    <div
+      class="xs:space-y-4 col-span-12 row-span-4 space-y-2 font-black lg:col-span-10"
+    >
+      <h3 class="xs:text-5xl text-4xl lg:text-8xl">
         FRONTEND <span class="bg-accent">DEVELOPER</span>
       </h3>
-      <h3 class="text-3xl lg:text-6xl">UI & UX DESIGNER</h3>
-      <h3 class="text-4xl lg:text-7xl">SKATER</h3>
-      <h3 class="text-5xl lg:text-8xl">BLOGGER</h3>
+      <h3 class="xs:text-3xl text-2xl lg:text-6xl">UI & UX DESIGNER</h3>
+      <h3 class="xs:text-4xl text-3xl lg:text-7xl">SKATER</h3>
+      <h3 class="xs:text-5xl text-4xl lg:text-8xl">BLOGGER</h3>
     </div>
     <div class="row-span-4 hidden items-center justify-end lg:flex">
       <ThemeChanger />

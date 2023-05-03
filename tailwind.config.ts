@@ -11,6 +11,9 @@ export default <Partial<Config>>{
       fontFamily: {
         'josefin-sans': ['Josefin Sans', 'sans-serif'],
       },
+      screens: {
+        xs: '400px',
+      },
     },
     plugins: ['@tailwindcss/typography', '@tailwindcss/aspect-ratio'],
   },
