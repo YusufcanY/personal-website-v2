@@ -33,17 +33,17 @@
       </h3>
       <a
         class="border-accent col-span-1 flex flex-col space-y-4 border border-opacity-0 p-4 hover:border-opacity-100 hover:shadow-lg md:col-span-2"
-        href="mailto:mail@yusufcanyilmaz.com"
+        href="mailto:yusufcan.yilmaz@outlook.com"
       >
-        <span class="text-lg" for="email">email:</span>
-        <span class="text-xl font-bold">mail@yusufcanyilmaz.com</span>
+        <span class="text-lg">email:</span>
+        <span class="text-xl font-bold">yusufcan.yilmaz@outlook.com</span>
       </a>
       <a
         class="border-accent col-span-1 flex flex-col space-y-4 border border-opacity-0 p-4 hover:border-opacity-100 hover:shadow-lg"
         href="https://github.com/YusufcanY"
         target="_blank"
       >
-        <span class="text-lg" for="email">github:</span>
+        <span class="text-lg">github:</span>
         <span class="text-xl font-bold">@YusufcanY</span>
       </a>
       <a
@@ -51,31 +51,15 @@
         href="https://gitlab.com/YusufcanY"
         target="_blank"
       >
-        <span class="text-lg" for="email">gitlab:</span>
+        <span class="text-lg">gitlab:</span>
         <span class="text-xl font-bold">@YusufcanY</span>
-      </a>
-      <a
-        class="border-accent col-span-1 flex flex-col space-y-4 border border-opacity-0 p-4 hover:border-opacity-100 hover:shadow-lg"
-        href="https://blog.yusufcanyilmaz.com/"
-        target="_blank"
-      >
-        <span class="text-lg" for="email">hashnode:</span>
-        <span class="text-xl font-bold">blog.yusufcanyilmaz.com</span>
-      </a>
-      <a
-        class="border-accent col-span-1 flex flex-col space-y-4 border border-opacity-0 p-4 hover:border-opacity-100 hover:shadow-lg"
-        href="https://medium.com/@yusufcan-yilmaz/"
-        target="_blank"
-      >
-        <span class="text-lg" for="email">medium:</span>
-        <span class="text-xl font-bold">medium.com/@yusufcan-yilmaz</span>
       </a>
       <a
         class="border-accent col-span-1 flex flex-col space-y-4 border border-opacity-0 p-4 hover:border-opacity-100 hover:shadow-lg"
         href="https://www.linkedin.com/in/yusufcan-yilmaz"
         target="_blank"
       >
-        <span class="text-lg" for="email">linkedin:</span>
+        <span class="text-lg">linkedin:</span>
         <span class="text-xl font-bold">linkedin.com/in/yusufcan-yilmaz</span>
       </a>
       <a
@@ -83,8 +67,16 @@
         href="https://twitter.com/yusufcan_nn"
         target="_blank"
       >
-        <span class="text-lg" for="email">twitter:</span>
+        <span class="text-lg">twitter:</span>
         <span class="text-xl font-bold">@yusufcan_nn</span>
+      </a>
+      <a
+        class="bg-accent col-span-1 flex flex-col space-y-4 border border-white border-opacity-0 p-4 text-white hover:border-opacity-100 hover:shadow-lg md:col-span-2"
+        href="https://blog.yusufcanyilmaz.com/"
+        target="_blank"
+      >
+        <span class="text-lg">hashnode:</span>
+        <span class="text-xl font-bold">blog.yusufcanyilmaz.com</span>
       </a>
     </div>
   </div>
