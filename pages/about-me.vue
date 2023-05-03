@@ -94,7 +94,7 @@
         Meet <span class="text-accent">Yusufcan</span>
       </h2>
       <NuxtLink
-        class="bg-dark-foreground dark:bg-light-foreground bg-opacity-0 p-2 hover:bg-opacity-10 dark:bg-opacity-0 dark:hover:bg-opacity-10"
+        class="hover:bg-dark-foreground/5 dark:hover:bg-light-foreground/5 bg-opacity-0 p-2"
         to="/"
       >
         <ArrowRightIcon class="h-8 w-8" />
