@@ -1,5 +1,5 @@
 <script setup>
-  import { ArrowNarrowRightIcon } from '@heroicons/vue/outline'
+  import { ArrowRightIcon } from '@heroicons/vue/24/outline'
   definePageMeta({
     title: 'Skills',
     description:
@@ -8,15 +8,15 @@
 </script>
 <template>
   <div
-    class="container mx-auto space-y-4 bg-light-foreground p-4 text-dark-foreground dark:bg-dark-foreground dark:text-light-foreground lg:pt-48"
+    class="bg-light-foreground text-dark-foreground dark:bg-dark-foreground dark:text-light-foreground container mx-auto space-y-4 p-4 lg:pt-48"
   >
     <div class="flex items-center justify-between">
       <h2 class="text-4xl font-black">Coding</h2>
       <NuxtLink
-        class="bg-dark-foreground bg-opacity-0 p-2 hover:bg-opacity-10 dark:bg-light-foreground dark:bg-opacity-0 dark:hover:bg-opacity-10"
+        class="bg-dark-foreground dark:bg-light-foreground bg-opacity-0 p-2 hover:bg-opacity-10 dark:bg-opacity-0 dark:hover:bg-opacity-10"
         to="/"
       >
-        <ArrowNarrowRightIcon class="h-8 w-8" />
+        <ArrowRightIcon class="h-8 w-8" />
       </NuxtLink>
     </div>
     <p>
@@ -32,7 +32,7 @@
     </p>
     <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
       <div
-        class="relative flex flex-col justify-center overflow-hidden bg-dark-foreground !bg-opacity-10 p-6 pt-12 dark:bg-light-foreground"
+        class="bg-dark-foreground dark:bg-light-foreground relative flex flex-col justify-center overflow-hidden !bg-opacity-10 p-6 pt-12"
       >
         <h4 class="text-2xl font-black">VUE</h4>
         <p class="opacity-50">Progressive JS Framework</p>
@@ -43,7 +43,7 @@
         />
       </div>
       <div
-        class="relative flex flex-col justify-center overflow-hidden bg-dark-foreground !bg-opacity-10 p-6 pt-12 dark:bg-light-foreground"
+        class="bg-dark-foreground dark:bg-light-foreground relative flex flex-col justify-center overflow-hidden !bg-opacity-10 p-6 pt-12"
       >
         <h4 class="text-2xl font-black">NUXT</h4>
         <p class="opacity-50">Intuitive Vue Framework</p>
@@ -54,7 +54,7 @@
         />
       </div>
       <div
-        class="relative col-span-2 flex flex-col justify-center overflow-hidden bg-dark-foreground !bg-opacity-10 p-6 pt-12 dark:bg-light-foreground lg:col-span-1"
+        class="bg-dark-foreground dark:bg-light-foreground relative col-span-2 flex flex-col justify-center overflow-hidden !bg-opacity-10 p-6 pt-12 lg:col-span-1"
       >
         <h4 class="text-2xl font-black">TAILWINDCSS</h4>
         <p class="opacity-50">Class Based CSS Framework</p>
@@ -65,7 +65,7 @@
         />
       </div>
       <div
-        class="relative flex flex-col justify-center overflow-hidden bg-dark-foreground !bg-opacity-10 p-6 pt-12 dark:bg-light-foreground"
+        class="bg-dark-foreground dark:bg-light-foreground relative flex flex-col justify-center overflow-hidden !bg-opacity-10 p-6 pt-12"
       >
         <h4 class="text-2xl font-black">TESTING</h4>
         <p class="opacity-50">I'm Test Driven Developer</p>
@@ -76,7 +76,7 @@
         />
       </div>
       <div
-        class="relative flex flex-col justify-center overflow-hidden bg-dark-foreground !bg-opacity-10 p-6 pt-12 dark:bg-light-foreground"
+        class="bg-dark-foreground dark:bg-light-foreground relative flex flex-col justify-center overflow-hidden !bg-opacity-10 p-6 pt-12"
       >
         <h4 class="text-2xl font-black">SASS</h4>
         <p class="opacity-50">Syntactically Awesome Styling</p>
@@ -87,7 +87,7 @@
         />
       </div>
       <div
-        class="relative flex flex-col justify-center overflow-hidden bg-dark-foreground !bg-opacity-10 p-6 pt-12 dark:bg-light-foreground"
+        class="bg-dark-foreground dark:bg-light-foreground relative flex flex-col justify-center overflow-hidden !bg-opacity-10 p-6 pt-12"
       >
         <h4 class="text-2xl font-black">REACT</h4>
         <p class="opacity-50">JS Library</p>
@@ -98,7 +98,7 @@
         />
       </div>
       <div
-        class="relative flex flex-col justify-center overflow-hidden bg-dark-foreground !bg-opacity-10 p-6 pt-12 dark:bg-light-foreground"
+        class="bg-dark-foreground dark:bg-light-foreground relative flex flex-col justify-center overflow-hidden !bg-opacity-10 p-6 pt-12"
       >
         <h4 class="text-2xl font-black">PHP</h4>
         <p class="opacity-50">Hypertext Preprocessor</p>
@@ -109,7 +109,7 @@
         />
       </div>
       <div
-        class="relative col-span-2 flex flex-col justify-center overflow-hidden bg-dark-foreground !bg-opacity-10 p-6 pt-12 dark:bg-light-foreground lg:col-span-1"
+        class="bg-dark-foreground dark:bg-light-foreground relative col-span-2 flex flex-col justify-center overflow-hidden !bg-opacity-10 p-6 pt-12 lg:col-span-1"
       >
         <h4 class="text-2xl font-black">TYPESCRIPT</h4>
         <p class="opacity-50">JavaScript With Syntax For Types</p>

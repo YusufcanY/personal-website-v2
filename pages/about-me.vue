@@ -1,8 +1,8 @@
 <script setup>
   import {
-    ArrowNarrowRightIcon,
-    ExternalLinkIcon,
-  } from '@heroicons/vue/outline'
+    ArrowRightIcon,
+    ArrowTopRightOnSquareIcon,
+  } from '@heroicons/vue/24/outline'
   definePageMeta({
     title: 'About Me',
     description:
@@ -87,17 +87,17 @@
 </script>
 <template>
   <div
-    class="container mx-auto space-y-4 bg-light-foreground p-4 text-dark-foreground dark:bg-dark-foreground dark:text-light-foreground lg:pt-48"
+    class="bg-light-foreground text-dark-foreground dark:bg-dark-foreground dark:text-light-foreground container mx-auto space-y-4 p-4 lg:pt-48"
   >
     <div class="flex items-center justify-between">
       <h2 class="text-4xl font-black">
         Meet <span class="text-accent">Yusufcan</span>
       </h2>
       <NuxtLink
-        class="bg-dark-foreground bg-opacity-0 p-2 hover:bg-opacity-10 dark:bg-light-foreground dark:bg-opacity-0 dark:hover:bg-opacity-10"
+        class="bg-dark-foreground dark:bg-light-foreground bg-opacity-0 p-2 hover:bg-opacity-10 dark:bg-opacity-0 dark:hover:bg-opacity-10"
         to="/"
       >
-        <ArrowNarrowRightIcon class="h-8 w-8" />
+        <ArrowRightIcon class="h-8 w-8" />
       </NuxtLink>
     </div>
     <div
@@ -130,13 +130,13 @@
           ? []
           : hashnode.data.user.publication.posts"
         :key="index"
-        class="group relative flex flex-col overflow-hidden border border-dark-foreground border-opacity-20 bg-dark-foreground !bg-opacity-10 p-4 hover:shadow-xl dark:border-light-foreground dark:border-opacity-20 dark:bg-light-foreground lg:h-60"
+        class="border-dark-foreground bg-dark-foreground dark:border-light-foreground dark:bg-light-foreground group relative flex flex-col overflow-hidden border border-opacity-20 !bg-opacity-10 p-4 hover:shadow-xl dark:border-opacity-20 lg:h-60"
         :href="`https://blog.yusufcanyilmaz.com/${post.slug}`"
         target="_blank"
       >
         <img
           alt=""
-          class="top-0 left-0 z-0 mb-4 h-full w-full lg:absolute lg:mb-0"
+          class="left-0 top-0 z-0 mb-4 h-full w-full lg:absolute lg:mb-0"
           :src="post.coverImage"
         />
         <div class="hidden h-0 ease-in-out group-hover:h-full lg:block"></div>
@@ -149,16 +149,16 @@
           >
         </div>
         <div
-          class="absolute top-0 left-0 z-[6] hidden h-full w-full bg-light-foreground opacity-70 group-hover:opacity-0 dark:bg-dark-foreground lg:block"
+          class="bg-light-foreground dark:bg-dark-foreground absolute left-0 top-0 z-[6] hidden h-full w-full opacity-70 group-hover:opacity-0 lg:block"
         ></div>
 
         <div
-          class="absolute top-0 left-0 z-[5] hidden h-full w-full bg-gradient-to-t from-light-foreground to-transparent opacity-0 group-hover:opacity-100 dark:from-dark-foreground lg:block"
+          class="from-light-foreground dark:from-dark-foreground absolute left-0 top-0 z-[5] hidden h-full w-full bg-gradient-to-t to-transparent opacity-0 group-hover:opacity-100 lg:block"
         ></div>
         <button
-          class="top-4 right-4 z-10 mt-4 flex items-center justify-center space-x-2 border-b-2 border-accent border-opacity-0 bg-light-foreground p-4 text-lg opacity-100 hover:border-opacity-100 hover:shadow-md group-hover:opacity-100 dark:bg-dark-foreground lg:absolute lg:mt-0 lg:py-2 lg:text-base lg:opacity-0"
+          class="border-accent bg-light-foreground dark:bg-dark-foreground right-4 top-4 z-10 mt-4 flex items-center justify-center space-x-2 border-b-2 border-opacity-0 p-4 text-lg opacity-100 hover:border-opacity-100 hover:shadow-md group-hover:opacity-100 lg:absolute lg:mt-0 lg:py-2 lg:text-base lg:opacity-0"
         >
-          <ExternalLinkIcon class="hidden h-5 w-5 lg:block" />
+          <ArrowTopRightOnSquareIcon class="hidden h-5 w-5 lg:block" />
           <span class="flex space-x-1">
             <span>Read More</span>
           </span>
@@ -167,13 +167,13 @@
       <a
         v-for="(post, index) in errMed ? [] : medium.items"
         :key="index"
-        class="group relative flex flex-col overflow-hidden border border-dark-foreground border-opacity-20 bg-dark-foreground !bg-opacity-10 p-4 hover:shadow-xl dark:border-light-foreground dark:border-opacity-20 dark:bg-light-foreground lg:h-60"
+        class="border-dark-foreground bg-dark-foreground dark:border-light-foreground dark:bg-light-foreground group relative flex flex-col overflow-hidden border border-opacity-20 !bg-opacity-10 p-4 hover:shadow-xl dark:border-opacity-20 lg:h-60"
         :href="post.link"
         target="_blank"
       >
         <img
           alt=""
-          class="top-0 left-0 z-0 mb-4 h-full w-full lg:absolute lg:mb-0"
+          class="left-0 top-0 z-0 mb-4 h-full w-full lg:absolute lg:mb-0"
           :src="post.thumbnail"
         />
         <div class="hidden h-0 ease-in-out group-hover:h-full lg:block"></div>
@@ -186,16 +186,16 @@
           >
         </div>
         <div
-          class="absolute top-0 left-0 z-[6] hidden h-full w-full bg-light-foreground opacity-70 group-hover:opacity-0 dark:bg-dark-foreground lg:block"
+          class="bg-light-foreground dark:bg-dark-foreground absolute left-0 top-0 z-[6] hidden h-full w-full opacity-70 group-hover:opacity-0 lg:block"
         ></div>
 
         <div
-          class="absolute top-0 left-0 z-[5] hidden h-full w-full bg-gradient-to-t from-light-foreground to-transparent opacity-0 group-hover:opacity-100 dark:from-dark-foreground lg:block"
+          class="from-light-foreground dark:from-dark-foreground absolute left-0 top-0 z-[5] hidden h-full w-full bg-gradient-to-t to-transparent opacity-0 group-hover:opacity-100 lg:block"
         ></div>
         <button
-          class="top-4 right-4 z-10 mt-4 flex items-center justify-center space-x-2 border-b-2 border-accent border-opacity-0 bg-light-foreground p-4 text-lg opacity-100 hover:border-opacity-100 hover:shadow-md group-hover:opacity-100 dark:bg-dark-foreground lg:absolute lg:mt-0 lg:py-2 lg:text-base lg:opacity-0"
+          class="border-accent bg-light-foreground dark:bg-dark-foreground right-4 top-4 z-10 mt-4 flex items-center justify-center space-x-2 border-b-2 border-opacity-0 p-4 text-lg opacity-100 hover:border-opacity-100 hover:shadow-md group-hover:opacity-100 lg:absolute lg:mt-0 lg:py-2 lg:text-base lg:opacity-0"
         >
-          <ExternalLinkIcon class="hidden h-5 w-5 lg:block" />
+          <ArrowTopRightOnSquareIcon class="hidden h-5 w-5 lg:block" />
           <span class="flex space-x-1">
             <span>Read More</span>
           </span>

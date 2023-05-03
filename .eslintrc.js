@@ -5,24 +5,14 @@ module.exports = {
     browser: true,
     node: true,
   },
-  globals: {
-    definePageMeta: 'readonly',
-  },
-  parserOptions: {
-    sourceType: 'module',
-    ecmaVersion: 2022,
-  },
-  extends: [
-    'plugin:vue/vue3-recommended',
-    'eslint:recommended',
-    'plugin:json/recommended',
-    'plugin:nuxt/recommended',
-    '@nuxtjs',
-    'prettier',
-    './.nuxt/.eslintrc.js',
-  ],
-  plugins: ['json', 'prettier', 'nuxt'],
 
+  extends: ['@nuxtjs/eslint-config-typescript', 'prettier'],
+  plugins: ['json', 'prettier'],
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module',
+    parser: '@typescript-eslint/parser',
+  },
   rules: {
     'prettier/prettier': 'warn',
     'sort-imports': [

@@ -29,7 +29,7 @@
 </script>
 <template>
   <div>
-    <InitTheme />
+    <VitePwaManifest />
     <NuxtPage />
   </div>
 </template>
