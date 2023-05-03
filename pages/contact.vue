@@ -1,8 +1,17 @@
 <script setup>
-  import { ArrowRightIcon } from '@heroicons/vue/24/outline'
+  import {
+    ArrowRightIcon,
+    ClipboardDocumentIcon,
+  } from '@heroicons/vue/24/outline'
+  import { useClipboard } from '@vueuse/core'
+
   definePageMeta({
     title: 'Contact',
     description: 'Have a great idea to share? Just send me a message.',
+  })
+
+  const { copy, copied, isSupported } = useClipboard({
+    source: 'yusufcan.yilmaz@outlook.com',
   })
 </script>
 <template>
@@ -31,13 +40,26 @@
         or, if you'd like to meet for a cup of coffee and chit chat, simply drop
         me a message.
       </h3>
-      <a
-        class="border-accent col-span-1 flex flex-col space-y-4 border border-opacity-0 p-4 hover:border-opacity-100 hover:shadow-lg md:col-span-2"
-        href="mailto:yusufcan.yilmaz@outlook.com"
-      >
-        <span class="text-lg">email:</span>
-        <span class="text-xl font-bold">yusufcan.yilmaz@outlook.com</span>
-      </a>
+      <div class="group relative col-span-1 md:col-span-2">
+        <a
+          class="flex min-w-0 flex-col border border-opacity-0 p-4 hover:shadow-lg group-hover:border-opacity-100"
+          :class="copied ? 'border-green-500' : 'border-accent'"
+          href="mailto:yusufcan.yilmaz@outlook.com"
+        >
+          <span class="mb-4 text-lg">email:</span>
+          <span class="truncate text-xl font-bold"
+            >yusufcan.yilmaz@outlook.com</span
+          >
+        </a>
+        <button
+          v-if="isSupported"
+          class="bg-accent absolute top-0 h-10 w-10 p-2 max-md:right-0 md:left-0 md:top-1/2 md:-translate-x-full md:-translate-y-1/2 md:opacity-0 md:group-hover:opacity-100"
+          :class="copied ? 'bg-green-500' : 'bg-accent'"
+          @click="copy()"
+        >
+          <ClipboardDocumentIcon />
+        </button>
+      </div>
       <a
         class="border-accent col-span-1 flex flex-col space-y-4 border border-opacity-0 p-4 hover:border-opacity-100 hover:shadow-lg"
         href="https://github.com/YusufcanY"

@@ -1,5 +1,10 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@vite-pwa/nuxt'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
+    '@vueuse/nuxt',
+    '@vite-pwa/nuxt',
+  ],
   css: ['@/assets/css/main.css'],
   colorMode: {
     classSuffix: '',
