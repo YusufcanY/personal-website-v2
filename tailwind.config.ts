@@ -4,8 +4,8 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       colors: {
-        'dark-foreground': '#191919',
-        'light-foreground': '#f2f2f2',
+        'dark-foreground': '#070A05',
+        'light-foreground': '#f7faf5',
         accent: '#0057ff',
       },
       fontFamily: {

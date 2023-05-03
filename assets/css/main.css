@@ -7,10 +7,10 @@ html {
 }
 
 html.dark body {
-  background-color: #191919;
+  background-color: #070a05;
 }
 html.light body {
-  background-color: #f2f2f2;
+  background-color: #f7faf5;
 }
 body {
   font-family: 'Josefin Sans', sans-serif;
