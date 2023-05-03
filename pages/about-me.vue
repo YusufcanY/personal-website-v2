@@ -103,25 +103,48 @@
     <div
       class="flex flex-col items-center space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0"
     >
-      <div class="relative">
+      <div>
         <img
           alt="yusufcan yılmaz"
-          class="relative z-10 max-w-[200px] select-none rounded-full"
+          class="max-w-[200px] select-none"
           draggable="false"
           src="@/assets/yusufcan.jpeg"
         />
       </div>
       <p class="text-lg">
-        Hi, I'm <strong>Yusufcan</strong>. I'm a <u>software developer</u> and a
-        <u>web developer</u>. I'm currently working on Frontend and using Vue.js
-        as a framework. I enjoy gaming and skating; those are two of my favorite
-        pastimes. There are also social events, meeting new people is something
-        I like. Outside of work, I'm now attempting to improve my English on
-        <u>Cambly</u>. Right now, I'm working on some articles these days and
-        I'm sharing my Frontend experience, especially about Vue.js. You can
-        easily find my articles down below:
+        Hello, I'm <strong>Yusufcan Yılmaz</strong>, and I've been working as a
+        professional Frontend Developer for over <strong>3 years</strong>. I
+        have strong technical skills and extensive experience in web
+        development. I actively follow and utilize the latest technologies, with
+        particular expertise in
+        <strong>Vue.js, React.js, and SSR (Server-Side Rendering)</strong>.
+        <br />
+        <br />
+        Throughout my career, I've gained significant experience in creating
+        <u>user-friendly and visually appealing user interfaces</u>. By
+        effectively using HTML, CSS, and JavaScript in frontend development,
+        I've developed web applications that prioritize exceptional user
+        experiences. I'm also experienced in working with
+        <strong
+          >RESTful APIs, optimizing performance, and adhering to security
+          standards</strong
+        >.
       </p>
     </div>
+    <p class="text-lg">
+      I'm a <u>team player</u> with <u>strong communication skills</u> and
+      problem-solving abilities. I'm also proficient in project management and
+      time management, consistently delivering projects on time and with success
+      in team-oriented environments.
+      <br />
+      <br />
+      In my free time, I try to improve myself in different areas. Currently,
+      I'm learning <strong>German</strong> and <strong>English</strong>. I also
+      enjoy participating in social activities. Skateboarding, playing video
+      games, and playing the guitar are some of my hobbies. Besides, I write
+      blog articles about frontend development to share and reinforce my
+      knowledge.
+    </p>
     <h3 class="!mt-8 text-2xl font-black">Articles</h3>
     <div v-if="pendingHash || pendingMed">loading</div>
     <div v-else class="grid grid-cols-1 gap-4 lg:grid-cols-3">
