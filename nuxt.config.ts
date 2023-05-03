@@ -25,6 +25,12 @@ export default defineNuxtConfig({
           crossorigin: 'anonymous',
         },
         {
+          rel: 'preload',
+          as: 'style',
+          href: 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap',
+          crossorigin: 'anonymous',
+        },
+        {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap',
           crossorigin: 'anonymous',
@@ -121,6 +127,12 @@ export default defineNuxtConfig({
           src: '/img/yusufcan-yilmaz-512x512.png',
           sizes: '512x512',
           type: 'image/png',
+        },
+        {
+          src: '/img/yusufcan-yilmaz-192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+          purpose: 'any maskable',
         },
       ],
     },
