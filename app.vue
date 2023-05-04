@@ -8,7 +8,7 @@
   const description = computed(() => {
     return route.meta.description
       ? route.meta.description
-      : "Hello, I'm Yusufcan Yılmaz, and I've been a front-end developer professionally for almost three years. I'm a keen user of the most recent technologies, with a focus on Vue.js, React.js, and server-side rendering."
+      : "Hello, I'm Yusufcan Yılmaz, and I've been a Frontend Developer professionally for almost three years. I'm a keen user of the most recent technologies, with a focus on Vue.js, React.js, and server-side rendering."
   })
   useHead({
     title,
