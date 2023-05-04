@@ -10,6 +10,9 @@
       ? route.meta.description
       : "Hello, I'm Yusufcan Yılmaz, and I've been a Frontend Developer professionally for almost three years. I'm a keen user of the most recent technologies, with a focus on Vue.js, React.js, and server-side rendering."
   })
+  const canonical = computed(
+    () => 'https://www.yusufcanyilmaz.com' + route.path
+  )
   useHead({
     title,
     htmlAttrs: {
@@ -25,6 +28,7 @@
       { name: 'og:title', content: title },
       { name: 'og:description', content: description },
     ],
+    link: [{ rel: 'canonical', hid: 'canonical', href: canonical }],
   })
 </script>
 <template>
