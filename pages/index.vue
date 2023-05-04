@@ -3,8 +3,8 @@
   <div
     class="safe-area bg-light-foreground dark:bg-dark-foreground dark:text-light-foreground text-dark-foreground grid grid-cols-12 grid-rows-6 gap-2 p-4"
   >
-    <div class="col-span-8 text-2xl font-bold lg:col-span-6 lg:p-4 lg:text-xl">
-      <h2>yusufcan yılmaz</h2>
+    <div class="col-span-8 lg:col-span-6 lg:p-4">
+      <h1 class="text-2xl font-bold lg:text-xl">yusufcan yılmaz</h1>
     </div>
     <NuxtLink
       class="group col-span-6 hidden items-start justify-end text-xl lg:flex lg:p-4"
@@ -19,9 +19,9 @@
     <div
       class="xs:space-y-4 col-span-12 row-span-4 space-y-2 font-black lg:col-span-10"
     >
-      <h3 class="xs:text-5xl text-4xl lg:text-8xl">
+      <h2 class="xs:text-5xl text-4xl lg:text-8xl">
         FRONTEND <span class="bg-accent">DEVELOPER</span>
-      </h3>
+      </h2>
       <h3 class="xs:text-3xl text-2xl lg:text-6xl">UI & UX DESIGNER</h3>
       <h3 class="xs:text-4xl text-3xl lg:text-7xl">SKATER</h3>
       <h3 class="xs:text-5xl text-4xl lg:text-8xl">BLOGGER</h3>
