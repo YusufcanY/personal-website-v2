@@ -28,7 +28,7 @@
       at my first company. Four months later, I started working as a full-time
       Frontend Developer for the same firm. I'm familiar with crypto currency
       systems and have worked with web3.js. I've mentioned several technologies
-      that I've worked in the past:
+      that I'm working on below:
     </p>
     <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
       <div
