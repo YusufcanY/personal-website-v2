@@ -5,8 +5,6 @@
   } from '@heroicons/vue/24/outline'
   definePageMeta({
     title: 'About Me',
-    description:
-      'Yusufcan Yılmaz is a Frontend Developer who is passionate about building beautiful and functional websites.',
   })
   const timeSince = (date) => {
     if (date.charAt(date.length - 1) !== 'Z')

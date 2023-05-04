@@ -8,7 +8,7 @@
   const description = computed(() => {
     return route.meta.description
       ? route.meta.description
-      : 'Yusufcan Yılmaz is a Frontend Developer. Working on Vue.js, Nuxt.js and TailwindCSS.'
+      : "Hello, I'm Yusufcan Yılmaz, and I've been a front-end developer professionally for almost three years. I'm a keen user of the most recent technologies, with a focus on Vue.js, React.js, and server-side rendering."
   })
   useHead({
     title,
