@@ -56,36 +56,33 @@
     data: hashnode,
     pending: pendingHash,
     error: errHash,
-  } = useLazyFetch('https://api.hashnode.com/', {
+  } = useLazyFetch('https://gql.hashnode.com/', {
     method: 'post',
     body: {
-      query: `
-        {
-    user(username: "yusufcan") {
-      publication {
-        posts(page: 0) {
-          coverImage
+      query: `query Publication { publication(host: "blog.yusufcanyilmaz.com") { posts(first: 9) { edges { node {
           title
           brief
-          slug
-          dateAdded
-        }
-      }
-    }
-  }`,
+          url
+          publishedAt
+          coverImage{ url }
+      }}}}}`,
     },
     headers: {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',
     },
+    transform: (data) => {
+      return data.data.publication.posts.edges.map((edge) => {
+        return {
+          title: edge.node.title,
+          brief: edge.node.brief,
+          url: edge.node.url,
+          publishedAt: edge.node.publishedAt,
+          coverImage: edge.node.coverImage.url,
+        }
+      })
+    },
   })
-  const {
-    data: medium,
-    pending: pendingMed,
-    error: errMed,
-  } = useLazyFetch(
-    'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@yusufcan-yilmaz'
-  )
 </script>
 <template>
   <div
@@ -147,23 +144,15 @@
       blog articles about frontend development to share and reinforce my
       knowledge.
     </p>
-    <h3
-      v-if="!(pendingHash || pendingMed || (errHash && errMed))"
-      class="!mt-8 text-2xl font-black"
-    >
+    <h3 v-if="!(pendingHash || errHash)" class="!mt-8 text-2xl font-black">
       Articles
     </h3>
-    <div v-if="pendingHash || pendingMed">loading</div>
-    <div v-else class="grid grid-cols-1 gap-4 lg:grid-cols-3">
-      <article
-        v-for="(post, index) in errHash
-          ? []
-          : hashnode.data.user.publication.posts"
-        :key="index"
-      >
+    <div v-if="pendingHash">Loading Articles</div>
+    <div v-else-if="!errHash" class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+      <article v-for="(post, index) in hashnode" :key="index">
         <a
           class="border-dark-foreground bg-dark-foreground dark:border-light-foreground dark:bg-light-foreground group relative flex flex-col overflow-hidden border border-opacity-20 !bg-opacity-10 p-4 hover:shadow-xl dark:border-opacity-20 lg:h-60"
-          :href="`https://blog.yusufcanyilmaz.com/${post.slug}`"
+          :href="post.url"
           target="_blank"
         >
           <img
@@ -177,44 +166,7 @@
               {{ post.title }}
             </h4>
             <span class="relative z-10 h-full"
-              >{{ timeSince(post.dateAdded) }} in Hashnode</span
-            >
-          </div>
-          <div
-            class="bg-light-foreground dark:bg-dark-foreground absolute left-0 top-0 z-[6] hidden h-full w-full opacity-70 group-hover:opacity-0 lg:block"
-          ></div>
-
-          <div
-            class="from-light-foreground dark:from-dark-foreground absolute left-0 top-0 z-[5] hidden h-full w-full bg-gradient-to-t to-transparent opacity-0 group-hover:opacity-100 lg:block"
-          ></div>
-          <button
-            class="border-accent bg-light-foreground dark:bg-dark-foreground right-4 top-4 z-10 mt-4 flex items-center justify-center space-x-2 border-b-2 border-opacity-0 p-4 text-lg opacity-100 hover:border-opacity-100 hover:shadow-md group-hover:opacity-100 lg:absolute lg:mt-0 lg:py-2 lg:text-base lg:opacity-0"
-          >
-            <ArrowTopRightOnSquareIcon class="hidden h-5 w-5 lg:block" />
-            <span class="flex space-x-1">
-              <span>Read More</span>
-            </span>
-          </button>
-        </a>
-      </article>
-      <article v-for="(post, index) in errMed ? [] : medium.items" :key="index">
-        <a
-          class="border-dark-foreground bg-dark-foreground dark:border-light-foreground dark:bg-light-foreground group relative flex flex-col overflow-hidden border border-opacity-20 !bg-opacity-10 p-4 hover:shadow-xl dark:border-opacity-20 lg:h-60"
-          :href="post.link"
-          target="_blank"
-        >
-          <img
-            alt=""
-            class="left-0 top-0 z-0 mb-4 h-full w-full lg:absolute lg:mb-0"
-            :src="post.thumbnail"
-          />
-          <div class="hidden h-0 ease-in-out group-hover:h-full lg:block"></div>
-          <div>
-            <h4 class="relative z-10 text-2xl font-black">
-              {{ post.title }}
-            </h4>
-            <span class="relative z-10 h-full"
-              >{{ timeSince(post.pubDate) }} in Medium</span
+              >{{ timeSince(post.publishedAt) }} in Hashnode</span
             >
           </div>
           <div
