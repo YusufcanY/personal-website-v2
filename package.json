@@ -41,6 +41,6 @@
     "@tailwindcss/typography": "0.5.2"
   },
   "engines": {
-    "node": "^14.16.0 || ^16.11.0 || ^17.0.0"
+    "node": "^20.0.0"
   }
 }
