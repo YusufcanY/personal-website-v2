@@ -15,7 +15,18 @@
     <div class="col-span-4 flex items-start justify-end lg:hidden">
       <ThemeChanger />
     </div>
-    <div class="row-span-4 hidden lg:block"></div>
+    <div class="row-span-4 hidden lg:block">
+       <iframe 
+    style="
+    width: 100%;
+    display: flex;
+    height: 100%;
+    border: none;
+     justify-content: center;
+     "
+     src="https://3dlooky.com/viewer?q=eyJhbGciOiJIUzI1NiJ9.eyJmdWxsUGF0aCI6InRlc3Rtb2RlbHMvMzc3YWM0MjItYjA2MS00MzFhLWFiMmYtODliNWNjYmE0NDY2Lzk5MmY2MWNjLTAxNDItNDdlNy05ZWE0LTg1ODY1MDc1NWY4MC5nbGIiLCJtb2RlbERhdGFJZCI6Ijg1YzU4YmY1LTJhMDgtNDQyOS05NzJiLWVlMzAxMGU3MDE0NCJ9.I8U_akRP2Peb8SYHsGx0Rha-n7ZrvhKBR50Mxr9DbLQ">
+ </iframe>
+    </div>
     <div
       class="xs:space-y-4 col-span-12 row-span-4 space-y-2 font-black lg:col-span-10"
     >
