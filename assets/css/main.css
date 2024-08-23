@@ -17,13 +17,7 @@ body {
   overflow-x: hidden;
 }
 .safe-area {
-  min-height: 100vh;
-}
-
-@media screen and (max-width: 1024px) {
-  .safe-area {
-    min-height: calc(85vh - env(safe-area-inset-bottom));
-  }
+  min-height: 100dvh;
 }
 
 .page-enter-active,
