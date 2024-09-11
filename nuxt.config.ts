@@ -179,4 +179,11 @@ export default defineNuxtConfig({
       periodicSyncForUpdates: 3600,
     },
   },
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => {
+        return ['spline-viewer'].includes(tag)
+      },
+    },
+  },
 })
