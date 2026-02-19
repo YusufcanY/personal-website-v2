@@ -151,7 +151,7 @@
     <div v-else-if="!errHash" class="grid grid-cols-1 gap-4 lg:grid-cols-3">
       <article v-for="(post, index) in hashnode" :key="index">
         <a
-          class="border-dark-foreground bg-dark-foreground dark:border-light-foreground dark:bg-light-foreground group relative flex flex-col overflow-hidden border border-opacity-20 !bg-opacity-10 p-4 hover:shadow-xl dark:border-opacity-20 lg:h-60"
+          class="border-dark-foreground bg-dark-foreground dark:border-light-foreground dark:bg-light-foreground group relative flex flex-col overflow-hidden border border-opacity-20 !bg-opacity-10 p-4 hover:shadow-xl lg:h-60 dark:border-opacity-20"
           :href="post.url"
           target="_blank"
         >
